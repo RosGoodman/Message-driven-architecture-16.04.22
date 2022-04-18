@@ -1,32 +1,53 @@
 ﻿
 using Restaurant.Client.Model.Models;
+using System.Diagnostics;
 
 namespace Restaurant.Client.Model.DAL.Repositoryes;
 
 /// <summary> Интерфейс для репозитория модели ресторана. </summary>\
 public interface IRestaurantRepository : IRepository<RestaurantModel> { }
 
-
-///<inheritdoc cref="IRestaurantRepository"/>
+/// <summary> Репозиторий ресторана. </summary>
 public class RestaurantRepository : IRestaurantRepository
 {
+    ///<inheritdoc/>
     public void Add(RestaurantModel entity)
     {
-        throw new NotImplementedException();
+        try
+        {
+
+        }
+        catch (Exception ex) { Debug.Print($"Ошибка при попытке   {ex.Message}"); }
     }
 
+    ///<inheritdoc/>
     public void Delete(int id)
     {
-        throw new NotImplementedException();
+        try
+        {
+
+        }
+        catch (Exception ex) { Debug.Print($"Ошибка при попытке   {ex.Message}"); }
     }
 
+    ///<inheritdoc/>
     public RestaurantModel GetById(int id)
     {
-        throw new NotImplementedException();
+        try
+        {
+
+        }
+        catch (Exception ex) { Debug.Print($"Ошибка при попытке   {ex.Message}"); }
+        return null!;
     }
 
+    ///<inheritdoc/>
     public void Update(RestaurantModel entity)
     {
-        throw new NotImplementedException();
+        try
+        {
+
+        }
+        catch (Exception ex) { Debug.Print($"Ошибка при попытке   {ex.Message}"); }
     }
 }

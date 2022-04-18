@@ -6,7 +6,7 @@ namespace Restaurant.Client.Model.DAL.Repositoryes;
 public interface IRepository<T> where T : class
 {
     /// <summary> Добавить сущность. </summary>
-    /// <param name="entity"> Удаляемый экземпляр. </param>
+    /// <param name="entity"> Добавляемый экземпляр. </param>
     public void Add(T entity);
 
     /// <summary> Удалить сущность. </summary>
