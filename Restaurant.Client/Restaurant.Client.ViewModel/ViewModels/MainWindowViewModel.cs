@@ -1,5 +1,4 @@
-﻿
-namespace Restaurant.Client.ViewModel;
+﻿namespace Restaurant.Client.ViewModel.ViewModels;
 
 /// <summary> Основная ViewModel. </summary>
 public class MainWindowViewModel

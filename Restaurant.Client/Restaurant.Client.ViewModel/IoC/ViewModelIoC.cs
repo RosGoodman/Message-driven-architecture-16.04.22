@@ -1,5 +1,6 @@
 ﻿
 using Ninject;
+using Restaurant.Client.ViewModel.ViewModels;
 
 namespace Restaurant.Client.ViewModel.IoC;
 
@@ -20,6 +21,8 @@ public static class ViewModelIoC
     private static void BindViewModels()
     {
         Kernel.Bind<MainWindowViewModel>().ToSelf().InSingletonScope();
+        Kernel.Bind<RestaurantViewModel>().ToSelf().InSingletonScope();
+        Kernel.Bind<TablesViewModel>().ToSelf().InSingletonScope();
     }
 
     /// <summary> Bind all singletone Repositories. </summary>

@@ -6,7 +6,7 @@ using Restaurant.Client.Views.Windows;
 
 namespace Restaurant.Client.Switcher;
 
-internal class PageSwitcher
+internal class PageSwitcher : IPageSwitcher
 {
     private IMainWindowPageZone _mainWindow;
 

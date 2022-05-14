@@ -1,6 +1,8 @@
 ﻿
 using Ninject;
+using Restaurant.Client.Switcher;
 using Restaurant.Client.Views.Pages;
+using Restaurant.Client.Views.Windows;
 
 namespace Restaurant.Client.IoC;
 
@@ -14,6 +16,9 @@ internal static class ViewsIoC
     {
         BindWindows();
         BindPages();
+        BindPageSwitcher();
+        Kernel.Bind<IPageSwitcher>().To<PageSwitcher>().InSingletonScope().
+            WithConstructorArgument("mainWindow", Kernel.Get<MainWindow>());
     }
 
 
@@ -27,5 +32,10 @@ internal static class ViewsIoC
     private static void BindWindows()
     {
         Kernel.Bind<MainWindow>().ToSelf().InSingletonScope();
+    }
+
+    private static void BindPageSwitcher()
+    {
+
     }
 }

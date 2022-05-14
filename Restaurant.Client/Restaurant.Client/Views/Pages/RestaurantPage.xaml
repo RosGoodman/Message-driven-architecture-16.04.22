@@ -9,6 +9,7 @@
       Title="RestaurantPage">
 
     <Grid>
-        
+        <TextBox Height="20" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center"
+                   Text="{Binding Title}"/>
     </Grid>
 </Page>
