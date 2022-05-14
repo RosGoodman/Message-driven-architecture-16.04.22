@@ -11,8 +11,4 @@
     <ProjectReference Include="..\Restaurant.Client.ViewModel\Restaurant.Client.ViewModel.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Pages\" />
-  </ItemGroup>
-
 </Project>

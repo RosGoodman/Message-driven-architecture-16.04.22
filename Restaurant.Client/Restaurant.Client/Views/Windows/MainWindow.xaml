@@ -13,8 +13,8 @@
         </Grid.RowDefinitions>
 
         <Menu Grid.Row="0" Height="26" Margin="2" FontWeight="Bold" FontSize="15">
+            <MenuItem Header="Рестораны"/>
             <MenuItem Header="Столики"/>
-            <MenuItem Header="Резервирование"/>
         </Menu>
         <Separator Grid.Row="1" VerticalAlignment="Top"/>
 

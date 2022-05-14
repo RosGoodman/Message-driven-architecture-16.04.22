@@ -1,11 +1,10 @@
 ﻿
 using Ninject;
-using Restaurant.Client.Model.DAL.DataContext;
 
-namespace Restaurant.Client.ViewModel.InvOfControl;
+namespace Restaurant.Client.ViewModel.IoC;
 
 /// <summary> IoC для приложения. </summary>
-public static class IoC
+public static class ViewModelIoC
 {
     /// <summary> Kernel для IoC кортейнера. </summary>
     public static IKernel Kernel { get; private set; } = new StandardKernel();
@@ -13,7 +12,8 @@ public static class IoC
     /// <summary> Настройкка IoC контейнера, привязка информации. </summary>
     public static void Setup()
     {
-        Kernel.Bind<IContextDb>().To<ContextDb>();
+        BindViewModels();
+        BindRepositories();
     }
 
     /// <summary> Bind all singletone VM. </summary>

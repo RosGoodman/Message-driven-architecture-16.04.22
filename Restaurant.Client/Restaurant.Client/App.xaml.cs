@@ -1,6 +1,7 @@
 ﻿using Ninject;
+using Restaurant.Client.IoC;
 using Restaurant.Client.ViewModel;
-using Restaurant.Client.ViewModel.InvOfControl;
+using Restaurant.Client.ViewModel.IoC;
 using System.Windows;
 
 namespace Restaurant.Client
@@ -16,8 +17,9 @@ namespace Restaurant.Client
         {
             base.OnStartup(e);
 
-            IoC.Setup();
-            var mainVM = IoC.Kernel.Get<MainWindowViewModel>();
+            ViewsIoC.Setup();
+            ViewModelIoC.Setup();
+            var mainVM = ViewModelIoC.Kernel.Get<MainWindowViewModel>();
 
             Current.MainWindow = new MainWindow() { DataContext = mainVM };
             Current.MainWindow.Show();
