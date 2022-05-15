@@ -17,8 +17,6 @@ internal static class ViewsIoC
         BindWindows();
         BindPages();
         BindPageSwitcher();
-        Kernel.Bind<IPageSwitcher>().To<PageSwitcher>().InSingletonScope().
-            WithConstructorArgument("mainWindow", Kernel.Get<MainWindow>());
     }
 
 
@@ -36,6 +34,7 @@ internal static class ViewsIoC
 
     private static void BindPageSwitcher()
     {
-
+        Kernel.Bind<PageSwitcher>().ToSelf().InSingletonScope().
+            WithConstructorArgument("mainWindow", Kernel.Get<MainWindow>());
     }
 }

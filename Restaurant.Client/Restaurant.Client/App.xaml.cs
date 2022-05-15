@@ -21,8 +21,9 @@ namespace Restaurant.Client
             ViewsIoC.Setup();
             ViewModelIoC.Setup();
 
-            Current.MainWindow = new MainWindow(); //ViewModelIoC.Kernel.Get<MainWindow>();
+            Current.MainWindow = ViewsIoC.Kernel.Get<MainWindow>();
             Current.MainWindow.DataContext = ViewModelIoC.Kernel.Get<MainWindowViewModel>();
+
             Current.MainWindow.Show();
 
         }

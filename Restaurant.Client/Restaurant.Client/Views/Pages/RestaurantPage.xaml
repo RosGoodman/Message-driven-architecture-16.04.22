@@ -9,7 +9,12 @@
       Title="RestaurantPage">
 
     <Grid>
-        <TextBox Height="20" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center"
+        <StackPanel>
+            <TextBox Height="20" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center"
                    Text="{Binding Title}"/>
+            <TextBox Height="20" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center"
+                   Text="tter"/>
+        </StackPanel>
+
     </Grid>
 </Page>

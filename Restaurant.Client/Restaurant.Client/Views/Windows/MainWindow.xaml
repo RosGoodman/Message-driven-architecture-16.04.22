@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="{Binding Title}" Height="800" Width="1280">
+        Title="{Binding Title}" Height="800" Width="1280" WindowStyle="SingleBorderWindow">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="241*"/>
@@ -18,6 +18,7 @@
         <Menu Grid.Row="0" Height="26" Margin="2,2,2,2" FontWeight="Bold" FontSize="15" Grid.ColumnSpan="2">
             <MenuItem Header="Рестораны" Click="OpenRestaurantPage_Click"/>
             <MenuItem Header="Столики" Click="OpenTablesPage_Click"/>
+            <MenuItem Header="Выход" Click="CloceProgramm_Click"/>
         </Menu>
         <Separator Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="0,2,0,0"/>
 

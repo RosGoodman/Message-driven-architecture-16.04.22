@@ -8,7 +8,7 @@ namespace Restaurant.Client.Switcher;
 
 internal class PageSwitcher : IPageSwitcher
 {
-    private IMainWindowPageZone _mainWindow;
+    public IMainWindowPageZone _mainWindow;
 
     /// <summary> ctor. </summary>
     /// <param name="mainWindow"> MainWindow. </param>

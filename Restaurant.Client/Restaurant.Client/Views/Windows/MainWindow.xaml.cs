@@ -1,6 +1,7 @@
 ﻿using Ninject;
 using Restaurant.Client.IoC;
 using Restaurant.Client.Switcher;
+using Restaurant.Client.Views.Pages;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -14,10 +15,7 @@ public partial class MainWindow : Window, IMainWindowPageZone
     public ContentControl MainWindowPageZoneContent
     {
         get => MainPageZone;
-        set
-        {
-            MainPageZone.Content = value;
-        }
+        set => MainPageZone.Content = value;
     }
 
     public MainWindow()
@@ -32,7 +30,7 @@ public partial class MainWindow : Window, IMainWindowPageZone
     /// <param name="e"></param>
     private void OpenRestaurantPage_Click(object sender, RoutedEventArgs e)
     {
-        var switcher = ViewsIoC.Kernel.Get<IPageSwitcher>();
+        var switcher = ViewsIoC.Kernel.Get<PageSwitcher>();
         switcher.SwitchTo(PagesEnum.RestaurantPage);
     }
 
@@ -43,7 +41,12 @@ public partial class MainWindow : Window, IMainWindowPageZone
     /// <param name="e"></param>
     private void OpenTablesPage_Click(object sender, RoutedEventArgs e)
     {
-        var switcher = ViewsIoC.Kernel.Get<IPageSwitcher>();
+        var switcher = ViewsIoC.Kernel.Get<PageSwitcher>();
         switcher.SwitchTo(PagesEnum.TablesPage);
+    }
+
+    private void CloceProgramm_Click(object sender, RoutedEventArgs e)
+    {
+        Application.Current.Shutdown();
     }
 }
