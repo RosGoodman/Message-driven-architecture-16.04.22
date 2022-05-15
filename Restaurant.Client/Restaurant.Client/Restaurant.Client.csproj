@@ -7,12 +7,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Restaurant.Client.ViewModel\Restaurant.Client.ViewModel.csproj" />
-  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Views\Pages\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Restaurant.Client.ViewModel\Restaurant.Client.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>
