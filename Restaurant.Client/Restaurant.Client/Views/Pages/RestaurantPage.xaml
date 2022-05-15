@@ -10,10 +10,12 @@
 
     <Grid>
         <StackPanel>
-            <TextBox Height="20" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center"
-                   Text="{Binding Title}"/>
-            <TextBox Height="20" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center"
-                   Text="tter"/>
+            <DataGrid>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="" Width="30" CanUserResize="False"/>
+                    <DataGridTextColumn Header="Наименование" Width="*" CanUserResize="False"/>
+                </DataGrid.Columns>
+            </DataGrid>
         </StackPanel>
 
     </Grid>

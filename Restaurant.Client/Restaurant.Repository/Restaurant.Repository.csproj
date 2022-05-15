@@ -1,14 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Ninject" Version="3.3.5" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Restaurant.DTOModels\Restaurant.DTOModels\Restaurant.DTOModels.csproj" />

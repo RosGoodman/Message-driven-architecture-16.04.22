@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.Client", "Restau
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.Client.ViewModel", "Restaurant.Client.ViewModel\Restaurant.Client.ViewModel.csproj", "{B8247716-0F6B-490C-81A0-EFB7EC18C481}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.DTOModels", "..\Restaurant.DTOModels\Restaurant.DTOModels\Restaurant.DTOModels.csproj", "{94F87F74-F16F-4A12-8226-3BCA20E720DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant.Repository", "Restaurant.Repository\Restaurant.Repository.csproj", "{410C2C72-1DFC-4032-A460-E02C7CAF9DCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{B8247716-0F6B-490C-81A0-EFB7EC18C481}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8247716-0F6B-490C-81A0-EFB7EC18C481}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8247716-0F6B-490C-81A0-EFB7EC18C481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F87F74-F16F-4A12-8226-3BCA20E720DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F87F74-F16F-4A12-8226-3BCA20E720DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F87F74-F16F-4A12-8226-3BCA20E720DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F87F74-F16F-4A12-8226-3BCA20E720DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{410C2C72-1DFC-4032-A460-E02C7CAF9DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410C2C72-1DFC-4032-A460-E02C7CAF9DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410C2C72-1DFC-4032-A460-E02C7CAF9DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410C2C72-1DFC-4032-A460-E02C7CAF9DCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
